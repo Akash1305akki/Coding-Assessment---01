@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+char operator;
+double n1,n2;
+
+printf("Enter an operator('+','-','*','/'):");
+scanf("%c",&operator);
+printf("Enter the 2 Operands:");
+scanf("%f%f", &n1,&n2);
+
+Switch(operator)
+  { 
+    Case '+':
+      printf("\n %f+%f=%f" ,n1,n2,n1+n2);
+      break ;
+    Case '-':
+      printf("\n %f-%f=%f" ,n1,n2,n1-n2);
+      break ;
+    Case '*':
+      printf("\n %f*%f=%f" ,n1,n2,n1*n2);
+      break ;
+    Case '/':
+      printf("\n %f/%f=%f" ,n1,n2,n1/n2);
+      break ;
+    Default :
+      printf("\n Invalid operator");
+  }
+  return 0;
+}
